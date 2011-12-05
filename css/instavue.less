@@ -1,0 +1,100 @@
+@import "960";
+@import "elements";
+
+body {
+  background-color: #AB967D;
+  background-image: url(img/bg.png);
+  background-repeat: repeat-x;
+  color: #251911;
+  font-family: Arvo, serif;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.13);
+}
+
+header {
+  background-image: url(img/stripes.png);
+  background-repeat: no-repeat;
+  background-position: 750px top;
+  padding-top: 1em;
+  height: 90px;
+}
+
+a {
+  color: #fff;
+  &:visited, &:active { color: #fff; }
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: Bevan, sans-serif;
+  font-weight: bold;
+  font-size: 63px;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+p {
+  line-height: 125%;
+}
+
+div#main {
+  .grid_5;
+  .alpha;
+}
+
+.price {
+  color: #fff;
+  display: inline-block;
+  line-height: 100%;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: #777 0 -1px 0;
+  font-size: 32px;
+  line-height: 50px;
+  width: 125px;
+  .gradient(#B8253F, #B8253F, #FD3353);
+  .rounded(10px);
+  .multi-shadow(0 1px 0 rgba(0, 0, 0, .3), inset 0 1px 0 rgba(255, 255, 255, 0.25));
+  &:hover {
+    color: #fff;
+    .box-shadow(0 0 10px rgba(0, 0, 0, 0.4));
+  }
+  &:active {
+    .gradient(#B8253F, #FD3353, #B8253F);
+  }
+}
+
+div#right {
+  .grid_7;
+  .omega;
+}
+
+.screenshot {
+  display: block;
+  height: 327px;
+  width: 448px;
+}
+
+div#ipad {
+  background-image: url(img/ipad.png);
+  background-repeat: no-repeat;
+  height: 461px;
+  padding: 52px 0 0 51px;
+  width: 550px;
+  .slides {
+    .slides_container {
+      .screenshot;
+      div {
+        .screenshot;
+        img {
+          .screenshot;
+        }
+      }
+    }
+  }
+}
