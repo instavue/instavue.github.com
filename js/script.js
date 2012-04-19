@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $('.slides').slides({
     generatePagination: false,
-    preload: true,
+    preload: false,
     bigTarget: true,
     play: 5000
   });
